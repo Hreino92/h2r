@@ -3,6 +3,3 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  #grad {
-    background-image: linear-gradient(to right, red , yellow);
-  }

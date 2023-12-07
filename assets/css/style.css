@@ -20,6 +20,11 @@
   border-radius: 10%;
 }
 
+.navbar-nav .active{
+  background-color: #fd840bd6;
+  border-radius: 10%;
+}
+
 .fixed-help-center {
   position: fixed !important;
   bottom: 0;

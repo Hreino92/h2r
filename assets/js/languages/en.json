@@ -61,7 +61,7 @@
         "carouseldescription":"Context"
     },
     "tickets_form":{
-        "title":"Quote your next trip",
+        "title":"Quote your next ticket",
         "required":"*Requerid field",
         "yes":"YES",
         "name":"Name:",
@@ -77,5 +77,19 @@
         "phone_call":"Phone call",
         "adults":"How many adults are traveling?:",
         "kids":"How many kids are traveling?:"
+    },
+    "contact_form":{
+        "title":"Quote your next trip",
+        "required":"*Requerid field",
+        "yes":"YES",
+        "name":"Name:",
+        "phone":"Contact phone number:",
+        "date_of_trip":"Date of trip:",
+        "package":"Package of interest:",
+        "tour":"Tour of interest:",
+        "hotel":"Hotel of interest:",
+        "transfer":"Transfer of interest:",
+        "flexibility":"Flexible dates?:",
+        "considerations":"Special considerations:"
     }
 }

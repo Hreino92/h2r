@@ -23,6 +23,11 @@
     <!--Referencia para FontAwesome-->
     <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Referencias para mask-input -->
+    <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluir Inputmask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <title>reserve503.travel</title>
 
 </head>
@@ -75,7 +80,7 @@
                             data-section="menu" data-value="who">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link nav-hover" href="#" data-section="menu" data-value="contact">Contacto</a>
+                        <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -87,48 +92,48 @@
 
 
 
-    <!--Formulario  -->
+    <!-- Formulw-bold -->
     <!--Formulario  -->
     <!--Formulario  -->
     <div class="container mt-4 border border-success p-3 rounded " id="tickets_form">
-        <h1 class="green-text text-center" data-section="tickets_form" data-value="title">Cotiza tu próximo viaje</h1>
+        <h1 class="green-text text-center" data-section="tickets_form" data-value="title">Cotiza tu próximo Boleto</h1>
         <br>
         <form id="form">
             <div class="row">
                 <!-- Columna 1 -->
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="name" class="form-label" data-section="tickets_form" data-value="name">Nombre:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <label for="name" class="fw-bold" data-section="tickets_form" data-value="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="e.g. Juan Pérez">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="form-label" data-section="tickets_form" data-value="phone">Teléfono de contacto:</label>
-                        <input type="text" class="form-control" id="phone" name="phone" required>
+                        <label for="phone" class="fw-bold" data-section="tickets_form" data-value="phone">Teléfono de contacto:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required placeholder="e.g. 503 7123-4567">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label" data-section="tickets_form" data-value="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <label for="email" class="fw-bold" data-section="tickets_form" data-value="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="e.g. juanperez@mail.com">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="city" class="form-label" data-section="tickets_form" data-value="city">Ciudad de destino:</label>
-                        <input type="text" class="form-control" id="city" name="city" required>
+                        <label for="city" class="fw-bold" data-section="tickets_form" data-value="city">Ciudad de destino:</label>
+                        <input type="text" class="form-control" id="city" name="city" required placeholder="e.g. Los Angeles">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="start_date" class="form-label" data-section="tickets_form" data-value="start_date">Fecha de inicio del viaje:</label>
+                        <label for="start_date" class="fw-bold" data-section="tickets_form" data-value="start_date">Fecha de inicio del viaje:</label>
                         <input type="date" class="form-control" id="start_date" name="start_date" required>
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="end_date" class="form-label" data-section="tickets_form" data-value="end_date">Fecha de retorno:</label>
+                        <label for="end_date" class="fw-bold" data-section="tickets_form" data-value="end_date">Fecha de retorno:</label>
                         <input type="date" class="form-control" id="end_date" name="end_date" required>
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" data-section="tickets_form" data-value="flexibility">¿Tienes flexibilidad de fechas?:</label>
+                        <label class="fw-bold" data-section="tickets_form" data-value="flexibility">¿Tienes flexibilidad de fechas?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexibility" id="flexibility_si"
                                 value="SI" checked>
@@ -146,7 +151,7 @@
                 <div class="col-md-6">
 
                     <div class="mb-3">
-                        <label class="form-label" for="airline" data-section="tickets_form" data-value="airline">Selecciona tu aerolínea de preferencia:</label>
+                        <label class="fw-bold" for="airline" data-section="tickets_form" data-value="airline">Selecciona tu aerolínea de preferencia:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="airline" id="airline" value="AVIANCA"
                                 checked>
@@ -181,7 +186,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="baggage" data-section="tickets_form" data-value="baggage">¿Deseas incluir el equipaje de carga?:</label>
+                        <label class="fw-bold" for="baggage" data-section="tickets_form" data-value="baggage">¿Deseas incluir el equipaje de carga?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="baggage" id="baggage" value="SI" checked>
                             <label for="SI" data-section="tickets_form" data-value="yes">SI</label>
@@ -192,7 +197,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="scale" data-section="tickets_form" data-value="scale">¿Deseas viajar con escalas?:</label>
+                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">¿Deseas viajar con escalas?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="scale" id="scale" value="SI">
                             <label class="form-check-label" for="SI" data-section="tickets_form" data-value="yes">SI</label>
@@ -203,7 +208,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="contact_form" data-section="tickets_form" data-value="contact_form">¿Cuál es tu forma preferida para que te contactemos?:</label>
+                        <label class="fw-bold" for="contact_form" data-section="tickets_form" data-value="contact_form">¿Cuál es tu forma preferida para que te contactemos?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
                                 value="WHATSAPP" checked>
@@ -221,11 +226,11 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="adults" data-section="tickets_form" data-value="adults">¿Cuántos adultos viajan?:</label>
+                        <label class="fw-bold" for="adults" data-section="tickets_form" data-value="adults">¿Cuántos adultos viajan?:</label>
                         <input class="form-control" type="number" name="adults" id="adults" min="1" max="10" value="1">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="kids" data-section="tickets_form" data-value="kids">¿Cuántos niños viajan?:</label>
+                        <label class="fw-bold" for="kids" data-section="tickets_form" data-value="kids">¿Cuántos niños viajan?:</label>
                         <input class="form-control" type="number" name="kids" id="kids" min="0" max="10" value="0">
                     </div>
                     <input class="btn btn-primary btn-lg" type="submit" id="button" value="Solicitar cotizacion">

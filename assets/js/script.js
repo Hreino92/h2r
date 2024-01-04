@@ -60,3 +60,33 @@ document.getElementById('form')
       alert('Error. Intente nuevamente. / Try Again');
     });
 });
+/*Formulario contacto */
+const btnContact = document.getElementById('buttonContact');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btnContact.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_tta754w';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btnContact.value = 'Send Email';
+      alert('¡Cotización enviada!');
+      window.location.href='/index.html';
+    }, (err) => {
+      btnContact.value = 'Solicitar Cotización';
+      //alert(JSON.stringify(err));
+      alert('Error. Intente nuevamente. / Try Again');
+    });
+});
+
+// Mask-input
+$(document).ready(function(){
+  // Aplicar máscara al campo de texto con id 'phone'
+  $('#phone').inputmask('(999) 9999-9999'); // Máscara para número de teléfono
+  
+});

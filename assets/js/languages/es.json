@@ -60,7 +60,7 @@
         "carouseldescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi corrupti quam iste fugit debitis eligendi maiores quos voluptatem voluptates? Iure suscipit non doloremque, cupiditate a officia fugiat nemo ab!"
     },
     "tickets_form":{
-        "title":"Cotiza tu próximo viaje",
+        "title":"Cotiza tu próximo boleto",
         "required":"*Campo requerido",
         "yes":"SI",
         "name":"Nombre:",
@@ -76,5 +76,19 @@
         "phone_call":"Llamada telefónica",
         "adults":"¿Cuántos adultos viajan?:",
         "kids":"¿Cuántos niños viajan?:"
+    },
+    "contact_form":{
+        "title":"Cotiza tu próximo viaje",
+        "required":"*Campo requerido",
+        "yes":"SI",
+        "name":"Nombre:",
+        "phone":"Teléfono de contacto:",
+        "date_of_trip":"Fecha de viaje:",
+        "package":"Paquete de interés:",
+        "tour":"Tour de interés:",
+        "hotel":"Hotel de interés:",
+        "transfer":"Traslado de interés:",
+        "flexibility":"¿Tienes flexibilidad de fechas?:",
+        "considerations":"Consideraciones especiales:"
     }
 }

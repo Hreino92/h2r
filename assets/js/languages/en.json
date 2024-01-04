@@ -62,7 +62,7 @@
     },
     "tickets_form":{
         "title":"Quote your next ticket",
-        "required":"*Requerid field",
+        "required":"*Required field",
         "yes":"YES",
         "name":"Name:",
         "phone":"Contact phone number:",
@@ -80,7 +80,7 @@
     },
     "contact_form":{
         "title":"Quote your next trip",
-        "required":"*Requerid field",
+        "required":"*Required field",
         "yes":"YES",
         "name":"Name:",
         "phone":"Contact phone number:",

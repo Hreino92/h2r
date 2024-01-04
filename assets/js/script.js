@@ -10,7 +10,7 @@ const changeLanguage = async language => {
 
     // el resultado lo almacenamos en texts
     const texts = await requestJson.json();
-    console.log(texts);
+    //console.log(texts);
 
     // recorremos los elementos del json
     for (const element of textToChange) {
@@ -33,4 +33,30 @@ const changeLanguage = async language => {
 flagsElement.addEventListener('click', (e) => {
     // console.log(e.target.parentElement.dataset.language);
     changeLanguage(e.target.parentElement.dataset.language);
+});
+
+
+
+//Formulario tickets
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_qxr9tzu';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Solicitar Cotización';
+      alert('¡Cotización enviada!');
+      window.location.href='/index.html';
+    }, (err) => {
+      btn.value = 'Solicitar Cotización';
+      // alert(JSON.stringify(err));
+      alert('Error. Intente nuevamente. / Try Again');
+    });
 });

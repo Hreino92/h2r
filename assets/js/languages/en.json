@@ -59,5 +59,23 @@
         "text4":"Image description",
         "text5":"Image description",
         "carouseldescription":"Context"
+    },
+    "tickets_form":{
+        "title":"Quote your next trip",
+        "required":"*Requerid field",
+        "yes":"YES",
+        "name":"Name:",
+        "phone":"Contact phone number:",
+        "city":"Destination city:",
+        "start_date":"Departure date:",
+        "end_date":"Arrival date:",
+        "flexibility":"Flexible dates?:",
+        "airline":"Preferred airline:",
+        "baggage":"Include checked baggage?:",
+        "scale":"Stopovers?",
+        "contact_form":"Preferred way of contact?:",
+        "phone_call":"Phone call",
+        "adults":"How many adults are traveling?:",
+        "kids":"How many kids are traveling?:"
     }
 }

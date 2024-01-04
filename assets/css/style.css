@@ -139,3 +139,18 @@ iframe{
 }
 /* Banderas */
 /* Banderas */
+
+
+
+/* Formulario*/
+#tickets_form{
+  background-image: url('../img/forms/airplane.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  #tickets_form{
+    background-image: none;
+  }
+}
+/* Formulario*/

@@ -58,5 +58,23 @@
         "text4":"Texto representativo y descriptivo de la imagen",
         "text5":"Texto representativo y descriptivo de la imagen",
         "carouseldescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi corrupti quam iste fugit debitis eligendi maiores quos voluptatem voluptates? Iure suscipit non doloremque, cupiditate a officia fugiat nemo ab!"
+    },
+    "tickets_form":{
+        "title":"Cotiza tu próximo viaje",
+        "required":"*Campo requerido",
+        "yes":"SI",
+        "name":"Nombre:",
+        "phone":"Teléfono de contacto:",
+        "city":"Ciudad de destino:",
+        "start_date":"Fecha de inicio del viaje:",
+        "end_date":"Fecha de retorno:",
+        "flexibility":"¿Tienes flexibilidad de fechas?:",
+        "airline":"Selecciona tu aerolínea de preferencia:",
+        "baggage":"¿Deseas incluir el equipaje de carga?:",
+        "scale":"¿Deseas viajar con escalas?",
+        "contact_form":"¿Cuál es tu forma preferida para que te contactemos?:",
+        "phone_call":"Llamada telefónica",
+        "adults":"¿Cuántos adultos viajan?:",
+        "kids":"¿Cuántos niños viajan?:"
     }
 }

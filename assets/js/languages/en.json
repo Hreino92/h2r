@@ -1,14 +1,15 @@
 {
     "menu":{
         "home":"Home",
-        "services": "Services",
-        "tickets": "Tickets",
+        "elsalvador": "El Salvador",
+        "other":"International Tourism",
+        "tickets": "Fligths",
         "who": "About us",
         "contact":"Contact"
     },
     "carimg1":{
-        "title":"Title",
-        "description":"Description"
+        "title":"Catedral Metropolitana de San Salvador",
+        "description":"Place of the tomb of Saint Oscar Romero"
     },
     "carimg2":{
         "title":"Title",
@@ -61,7 +62,8 @@
         "carouseldescription":"Context"
     },
     "tickets_form":{
-        "title":"Quote your next ticket",
+        "title":"Quote your next flight",
+        "instructions":"Please complete the form by providing accurate and up-to-date information to offer you the best possible airfare quote. We guarantee the full confidentiality of your data, which will be used exclusively to process your request and enhance the quality of our service. Thank you for trusting us!",
         "required":"*Required field",
         "yes":"YES",
         "name":"Name:",
@@ -91,5 +93,14 @@
         "transfer":"Transfer of interest:",
         "flexibility":"Flexible dates?:",
         "considerations":"Special considerations:"
+    },
+    "contactpage": {
+        "headline":"We are here for you, no matter where you are in the world!",
+        "text":"Our team combines cutting-edge technology with a friendly, personalized approach to make planning your next trip an easy and exciting experience. Whether by chat, email or social media, we are ready to answer your questions and help you create the perfect adventure. Contact us and discover how easy it is to travel with us.",
+        "endline":"Your next adventure begins with a click!",
+        "ourcontact":"Our contact:"
+    },
+    "tierraencanto":{
+        "name":"El Salvador, land of charm"
     }
 }

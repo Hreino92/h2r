@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Banderas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+
+
+    <!--Referencia a la pagina de estilos-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--Referencia al favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon.ico">
+
+    <!--Referencia para FontAwesome-->
+    <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencias para mask-input -->
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+    <title>reserve503.travel</title>
+</head>
+
+<body>
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="nav-logo" src="/assets/img/logoreserve503_Mesa de trabajo 1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                    <!-- Flags Section -->
+                    <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded">
+                    </div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'es',
+                                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
+                                layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                                gaTrack: true,
+                                gaId: 'UA-12345678-XX'
+                            }, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript"
+                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <!-- <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
+                        <div class="flags__item" data-language="es">
+                            <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">es</p>
+                        </div>
+                        <div class="flags__item" data-language="en">
+                            <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">en</p>
+                        </div>
+                    </div> -->
+                    <!-- Nav Items -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="../index.html" data-section="menu"
+                            data-value="home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./el-salvador.html" data-section="menu"
+                            data-value="elsalvador">El Salvador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./services.html" data-section="menu"
+                            data-value="other">Turismo Internacional</a>
+                    </li>
+                    <!-- Dropdown Menu for Cotizar -->
+                    <li class="nav-item dropdown zoom-effect">
+                        <a class="nav-link dropdown-toggle nav-hover active" href="#" id="cotizarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cotizar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                            <li><a class="dropdown-item" href="./tickets.html" data-section="menu"
+                                    data-value="tickets">Boletos aéreos</a></li>
+                            <li><a class="dropdown-item active" href="#" data-section="menu" data-value="quote">Cotizar
+                                    Servicios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu"
+                            data-value="who">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./contact.html" data-section="menu"
+                            data-value="contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+    <!-- Barra de navegacion-->
+
+    <!-- Form -->
+    <!-- Form -->
+    <!-- Form -->
+    <div class="container border border-success p-3 rounded" id="contact_form">
+        <h1 class="green-text text-center" data-section="contact_form" data-value="title">Cotizar</h1>
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarPrograma">Cotizar Programa</button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarTour">Cotizar Tour de un día</button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarHotel">Cotizar Hotel</button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+                    <button class="btn btn-primary w-100" id="btnCotizarTransporte">Cotizar Transporte</button>
+                </div>
+
+                <!-- Modal para Cotizar Transporte -->
+                <div class="modal fade" id="transportModal" tabindex="-1" aria-labelledby="transportModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="transportModalLabel">Seleccione el tipo de transporte</h5>
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                            </div>
+                            <div class="modal-body text-center">
+                                <button class="btn btn-primary w-100 mb-2" id="transfer">Traslado</button>
+                                <button class="btn btn-primary w-100 mb-2" id="rentacar">Renta de Autos</button>
+                                <button class="btn btn-primary w-100" id="transportesdelsol">Transportes Del Sol</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="form" class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="row">
+                        <!-- DATOS GENERALES -->
+                        <div class="col-6" id="contactInfoField">
+                            <label class="fw-bold">Información de contacto:</label>
+
+                            <div class="mb-3" id="nameField">
+                                <label class="fw-bold" for="client_name">Nombre:</label>
+                                <input class="form-control" type="text" name="client_name" id="client_name" required
+                                    placeholder="e.g. Juan Pérez">
+                                <p class="form-text">*Campo requerido</p>
+                            </div>
+
+                            <div class="mb-3" id="phoneField">
+                                <label class="fw-bold" for="client_phone">Teléfono de contacto:</label>
+                                <input class="form-control" type="text" name="client_phone" id="client_phone"
+                                    placeholder="e.g. 503 7123-4567" required>
+                                <p class="form-text">*Campo requerido</p>
+                            </div>
+
+                            <div class="mb-3" id="emailField">
+                                <label class="fw-bold" for="client_email">Email:</label>
+                                <input class="form-control" type="email" name="client_email" id="client_email" required
+                                    placeholder="e.g. juanperez@mail.com">
+                                <p class="form-text">*Campo requerido</p>
+                            </div>
+                        </div>
+                        <!-- DATOS GENERALES -->
+
+                        <!-- PROGRAM -->
+                        <div class="col-6">
+                            <div id="programInfoField">
+                                <div class="mb-3" id="packageField">
+                                    <label class="fw-bold" for="package">Programa de interés:</label>
+                                    <select class="form-select" name="package" id="package">
+                                        <option value="El Salvador, tierra de encanto (5 días/4 noches)">El Salvador,
+                                            tierra de
+                                            encanto (5 días/4 noches)</option>
+                                        <option value="El Salvador, tierra de naturaleza (6 días / 5 noches)">El
+                                            Salvador, tierra de
+                                            naturaleza (6 días / 5 noches)</option>
+                                        <option value="El Salvador, tierra de maravillas (7 días / 6 noches)">El
+                                            Salvador, tierra de
+                                            maravillas (7 días / 6 noches)</option>
+                                        <option value="El Salvador, tierra de fe (5 días / 4 noches)">El Salvador,
+                                            tierra de fe (5
+                                            días / 4 noches)</option>
+                                        <option value="El Salvador, tierra de energía (5 días / 4 noches)">El Salvador,
+                                            tierra de
+                                            energía (5 días / 4 noches)</option>
+                                        <option value="El Salvador a tu alcance (3 días / 2 noches)">El Salvador a tu
+                                            alcance (3
+                                            días / 2 noches)</option>
+                                        <option value="El Salvador en fin de semana (3 días / 2 noches)">El Salvador en
+                                            fin de
+                                            semana (3 días / 2 noches)</option>
+                                        <option value="El Salvador, cultura y naturaleza (2 días / 1 noche) ">El
+                                            Salvador, cultura y
+                                            naturaleza (2 días / 1 noche) </option>
+                                        <option value="El Salvador, café y aventura (2 días / 1 noche)">El Salvador,
+                                            café y aventura
+                                            (2 días / 1 noche)</option>
+                                        <option value="El Salvador, historia y naturaleza (3 días / 2 noches)">El
+                                            Salvador, historia
+                                            y naturaleza (3 días / 2 noches)</option>
+                                        <option value="Antigua Guatemala y Panajachel (3 días / 2 noches)">Antigua
+                                            Guatemala y
+                                            Panajachel (3 días / 2 noches)</option>
+                                        <option value="Ciudad y Playa - Panamá (5 días / 4 noches)">Ciudad y Playa -
+                                            Panamá (5 días
+                                            / 4 noches)</option>
+                                        <option value="Costa Rica, amigo tico (5 días / 4 noches)">Costa Rica, amigo
+                                            tico (5 días /
+                                            4 noches)</option>
+                                        <option value="Honduras (8 días / 7 noches)">Honduras (8 días / 7 noches)
+                                        </option>
+                                        <option value="Nicaragua -  Ruta colonial (5 días / 4 noches)">Nicaragua - Ruta
+                                            colonial (5
+                                            días / 4 noches)</option>
+                                        <option
+                                            value="La espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)">
+                                            La
+                                            espectacular Las Vegas con vistas al Gran Cañón (4 días / 3 noches)</option>
+                                        <option value="Orlando imperdible (4 días / 3 noches)">Orlando imperdible (4
+                                            días / 3
+                                            noches)</option>
+                                        <option value="Escápate a Miami Beach (4 días / 3 noches)">Escápate a Miami
+                                            Beach (4 días /
+                                            3 noches)</option>
+                                        <option value="Bogotá - Colombia (4 días / 3 noches)">Bogotá - Colombia (4 días
+                                            / 3 noches)
+                                        </option>
+                                        <option value="Santiago de Chile (4 días / 3 noches)">Santiago de Chile (4 días
+                                            / 3 noches)
+                                        </option>
+                                        <option value="Ica - Nazca (2 días / 1 noche)">Ica - Nazca(2 días / 1 noche)
+                                        </option>
+                                        <option value="Patagonia - Argentina (11 días / 10 noches)">Patagonia -
+                                            Argentina (11 días /
+                                            10 noches)</option>
+                                        <option value="Perú Ancestral (6 días / 5 noches)">Perú Ancestral (6 días / 5
+                                            noches)
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" id="travelDateField">
+                                    <label class="fw-bold" for="travel_date">Fecha de inicio del programa:</label>
+                                    <input class="form-control" type="date" name="travel_date" id="travel_date">
+                                </div>
+                                <div class="mb-3" id="flexibilityField">
+                                    <label class="fw-bold" for="flexibility">¿Tienes flexibilidad de fechas?:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexibility"
+                                            id="flexibilityYes" value="SI">
+                                        <label class="form-check-label" for="flexibilityYes">SI</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexibility"
+                                            id="flexibilityNo" value="NO" checked>
+                                        <label class="form-check-label" for="flexibilityNo">NO</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3" id="adultsProgramField">
+                                    <div class="fw-bold">Adultos participando en programa:</div>
+                                    <input class="form-control" type="number" name="adults_program" id="adults_program"
+                                        value="1">
+                                </div>
+                                <div class="mb-3" id="childrenProgramField">
+                                    <div class="fw-bold">Niños participando en programa:</div>
+                                    <input class="form-control" type="number" name="children_program"
+                                        id="children_program" value="0">
+                                    <p class="form-text">*Menores de 12 años cumplidos</p>
+                                </div>
+                                <div class="mb-3" id="considerationsField">
+                                    <label class="fw-bold" for="considerations">Consideraciones especiales del programa:</label>
+                                    <textarea class="form-control" name="considerations" id="considerations"
+                                        placeholder="e.g. Comida vegana">-</textarea>
+                                <ul>
+                                    <li class="form-text">Consideraciones por enfermedades crónicas o preexistentes, alergias.</li>
+                                    <li class="form-text">Consideraciones para adultos mayores, capacidades especiales.</li>
+                                    <li class="form-text">Consideraciones por mascotas, alimentación, etc. </li>
+                                </ul>
+                                </div>
+                                
+                            </div>
+                            <!-- PROGRAM -->
+
+                            <!-- DAYTOUR -->
+                            <div id="tourInfoField">
+                                <div class="mb-3" id="tourField">
+                                    <label class="fw-bold" for="tour">Tour de interés:</label>
+                                    <select class="form-select" name="tour" id="tour">
+                                        <option value="Tour de San Salvador">Tour de San Salvador</option>
+                                        <option value="La vida y comercio de los Mayas">La vida y comercio de los Mayas
+                                        </option>
+                                        <option value="Día Maya en El Salvador">Día Maya en El Salvador</option>
+                                        <option
+                                            value="Maravillosa experiencia en el Volcán de Santa Ana y Lago de Coatepeque">
+                                            Maravillosa experiencia en el Volcán de Santa Ana y Lago de Coatepeque
+                                        </option>
+                                        <option value="Descubriendo el cráter del Volcán de Santa Ana">Descubriendo el
+                                            cráter del Volcán de Santa Ana</option>
+                                        <option value="Experiencia natural en Cerro Verde y Lago de Coatepeque">
+                                            Experiencia natural en Cerro Verde y Lago de Coatepeque</option>
+                                        <option value="Aventura panorámica en Ruta de las Flores">Aventura panorámica en
+                                            Ruta de las Flores</option>
+                                        <option value="Adrenalina mágica en Ruta de las Flores">Adrenalina mágica en
+                                            Ruta de las Flores</option>
+                                        <option value="Ruta con aroma a flores y café">Ruta con aroma a flores y café
+                                        </option>
+                                        <option value="Suchitoto, ciudad del pájaro y la flor">Suchitoto, ciudad del
+                                            pájaro y la flor</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" id="tourtravelDateField">
+                                    <label class="fw-bold" for="travel_date">Fecha del tour:</label>
+                                    <input class="form-control" type="date" name="tourtravel_date" id="tourtravel_date">
+                                </div>
+                                <div class="mb-3" id="adultsTourField">
+                                    <div class="fw-bold">Adultos participando en tour:</div>
+                                    <input class="form-control" type="number" name="tour_adults" id="tour_adults"
+                                        value="1">
+                                </div>
+                                <div class="mb-3" id="childrenTourField">
+                                    <div class="fw-bold">Niños participando en tour:</div>
+                                    <input class="form-control" type="number" name="tour_children" id="tour_children"
+                                        value="0">
+                                    <p class="form-text">*Menores de 12 años cumplidos</p>
+                                </div>
+                                <div class="mb-3" id="TourConsiderationsField">
+                                    <label class="fw-bold" for="considerations">Consideraciones especiales del
+                                        tour:</label>
+                                    <textarea class="form-control" name="tour_considerations" id="tour_considerations"
+                                        placeholder="e.g. Comida vegana/Vegan food">-</textarea>
+                                        <ul>
+                                            <li class="form-text">Consideraciones por enfermedades crónicas o preexistentes, alergias.</li>
+                                            <li class="form-text">Consideraciones para adultos mayores, capacidades especiales.</li>
+                                            <li class="form-text">Consideraciones por mascotas, alimentación, etc. </li>
+                                        </ul>
+                                </div>
+                                
+                            </div>
+                            <!-- DAYTOUR  -->
+
+                            <!-- HOTEL -->
+                            <div class="mb-3" id="hotelField">
+                                <label for="hotel" class="fw-bold">Hotel de interés:</label>
+                                <select class="form-select" name="hotel" id="hotel">
+                                    <option value="Hotel Sheraton Presidente">Hotel Sheraton Presidente - San Salvador</option>
+                                    <option value="Hotel Barceló">Hotel Barceló - San Salvador</option>
+                                    <option value="Hotel Hilton San Salvador">Hotel Hilton San Salvador - San Salvador</option>
+                                    <option value="Hotel Courtyard">Hotel Courtyard - San Salvador</option>
+                                    <option value="Hotel Intercontinental">Hotel Intercontinental - San Salvador</option>
+                                    <option value="Cardedeu Suites">Cardedeu Suites - San Salvador</option>
+                                    <option value="Cardedeu Express">Cardedeu Express - San Salvador</option>
+                                    <option value="Cardedeu Lago">Cardedeu Lago - Santa Ana, Lago de Coatepeque</option>
+                                    <option value="Cardedeu Residence">Cardedeu Residence - Santa Ana, Lago de Coatepeque</option>
+                                    <option value="Casa 1800 - Cerro Verde">Casa 1800 - Cerro Verde</option>
+                                    <option value="Hotel Sueños">Hotel Sueños - San Salvador</option>
+                                    <option value="Hotel Los Almendros">Hotel Los Almendros - Suchitoto</option>
+                                    <option value="Casa 1800 - Suchitoto">Casa 1800 - Suchitoto - Suchitoto</option>
+                                    <option value="La posada de Suchitlán">La posada de Suchitlán - Suchitoto</option>
+                                    <option value="Casa 1800 - Ataco">Casa 1800 - Concepción de Ataco</option>
+                                    <option value="Hotel Fleur de Lis">Hotel Fleur de Lis - Concepción de Ataco</option>
+                                    <option value="Hotel Casa de Graciela">Hotel Casa de Graciela - Concepción de Ataco</option>
+                                    <option value="Hotel Las Puertas de Apaneca">Hotel Las Puertas de Apaneca</option>
+                                    <option value="La casa de Mamapán">La casa de Mamapán - Ahuachapán</option>
+                                    <option value="Hotel María Isabel">Hotel María Isabel - Ahuachapán (Calle a Jujutla)</option>
+                                    <option value="Hotel Roca Sunzal">Hotel Roca Sunzal - Playa El Tunco, La Libertad</option>
+                                    <option value="Atami Scape Resort">Atami Scape Resort - Tamanique, La Libertad</option>
+                                    <option value="Hotel Casa de Mar">Hotel Casa de Mar - Playa El Tunco, La Libertad</option>
+                                    <option value="Puro Surf Hotel">Puro Surf Hotel - Playa El Zonte, La Libertad</option>
+                                    <option value="Hotel Royal Decameron Salinitas">Hotel Royal Decameron Salinitas - Playa Salinitas, Sonsonate</option>
+                                    <option value="Hotel Casa del Golfo">Hotel Casa del Golfo - Playa El Malicus, La Unión</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="hotelTravelDateField">
+                                <label class="fw-bold" for="hoteltravel_date">Fecha inicio de reservación:</label>
+                                <input class="form-control" type="date" name="hotel_travel_date" id="hotel_travel_date">
+                            </div>
+                            <div class="mb-3" id="hotelEndDateField">
+                                <label class="fw-bold" for="hotel_end_date">Fecha final de reservación:</label>
+                                <input class="form-control" type="date" name="hotel_end_date" id="hotel_end_date">
+                            </div>
+                            <div class="mb-3" id="adultsHotelField">
+                                <div class="fw-bold">Adultos en la reservación/habitación:</div>
+                                <input class="form-control" type="number" name="hotel_adults" id="hotel_adults"
+                                    value="1">
+                            </div>
+                            <div class="mb-3" id="childrenHotelField">
+                                <div class="fw-bold">Niños en la reservación/habitación:</div>
+                                <input class="form-control" type="number" name="hotel_children" id="hotel_children"
+                                    value="0">
+                                <p class="form-text">*Menores de 12 años cumplidos</p>
+                            </div>
+                            <div class="mb-3" id="roomTypeField">
+                                <label for="room_type" class="fw-bold">Tipo de habitación:</label>
+                                <select class="form-select" name="room_type" id="room_type">
+                                    <option value="Sencilla">Sencilla</option>
+                                    <option value="Doble (1 cama)">Doble (1 cama)</option>
+                                    <option value="Doble - (2 camas)">Doble - (2 camas)</option>
+                                    <option value="Triple (2 camas)">Triple (2 camas)</option>
+                                    <option value="Triple (3 camas)">Triple (3 camas)</option>
+                                    <option value="Suite">Suite</option>
+                                    <option value="Cabaña">Cabaña</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="hotelConsiderationsField">
+                                <label class="fw-bold" for="hotel_considerations">Consideraciones especiales en la reservación:</label>
+                                <textarea class="form-control" name="hotel_considerations" id="hotel_considerations"
+                                    placeholder="e.g. Decoración especial/Special decoration">-</textarea>
+                                    <ul>
+                                        <li class="form-text">Consideraciones por enfermedades crónicas o preexistentes, alergias.</li>
+                                        <li class="form-text">Consideraciones para adultos mayores, capacidades especiales.</li>
+                                        <li class="form-text">Consideraciones por mascotas, alimentación, etc. </li>
+                                    </ul>
+                            </div>
+                            <!-- HOTEL -->
+
+                            <!-- TRANSFER -->
+                            <div class="mb-3" id="transferField">
+                                <label for="transfer" class="fw-bold">Tipo de traslado:</label>
+                                <select class="form-select" name="transfer" id="transfer">
+                                    <option value="Aeropuerto/Hotel">Aeropuerto/Hotel</option>
+                                    <option value="Hotel/Aeropuerto">Hotel/Aeropuerto</option>
+                                    <option value="Otro destino (Especifique en el campo 'Consideraciones Especiales')">
+                                        Otro destino (Especifique en el campo 'Consideraciones Especiales')</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="transferDateField">
+                                <label class="fw-bold" for="transfer_date">Fecha de traslado:</label>
+                                <input class="form-control" type="date" name="transfer_date" id="transfer_date">
+                            </div>
+                            <div class="mb-3" id="vehicleField">
+                                <label for="vehicle" class="fw-bold">Tipo de vehículo:</label>
+                                <select class="form-select" name="vehicle" id="vehicle">
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="Camioneta SUV">Camioneta SUV</option>
+                                    <option value="Minibus tipo HIACE/URVAN">Minibus tipo HIACE/URVAN</option>
+                                    <option value="Minibus tipo COASTER/COUNTY">Minibus tipo COASTER/COUNTY</option>
+                                    <option value="Minibus tipo MINIPULLMAN">Minibus tipo MINIPULLMAN</option>
+                                    <option value="Autobús tipo PULLMAN">Autobús tipo PULLMAN</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="transferConsiderationsField">
+                                <label class="fw-bold" for="transfer_considerations">Consideraciones y
+                                    dirección exacta de punto de salida y punto de llegada:</label>
+                                <textarea class="form-control" name="transfer_considerations"
+                                    id="transfer_considerations"
+                                    placeholder="e.g. Traslado desde Los Altos #17..."></textarea>
+                                <p class="form-text">*Por favor, especificar dirección exacta.</p>
+                            </div>
+                            <!-- TRANSFER -->
+
+                            <!-- RENTA DE AUTOS -->
+                            <div class="mb-3" id="rc_start_date_field">
+                                <label class="fw-bold" for="rc_start_date">Fecha de inicio de renta:</label>
+                                <input class="form-control" type="date" name="rc_start_date" id="rc_start_date">
+                            </div>
+                            <div class="mb-3" id="rc_end_date_field">
+                                <label class="fw-bold" for="rc_end_date">Fecha de finalización de renta:</label>
+                                <input class="form-control" type="date" name="rc_end_date" id="rc_end_date">
+                            </div>
+                            <div class="mb-3" id="rc_car_type_field">
+                                <label for="rc_car_type" class="fw-bold">Tipo de vehículo:</label>
+                                <select class="form-select" name="rc_car_type" id="rc_car_type">
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="Camioneta SUV">Camioneta SUV</option>
+                                    <option value="Camioneta pick-up">Camioneta pick-up</option>
+                                    <option value="Camioneta de lujo">Camioneta de lujo</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="rc_start_point_field">
+                                <label for="rc_start_point" class="fw-bold">Punto de inicio de renta:</label>
+                                <select class="form-select" name="rc_start_point" id="rc_start_point">
+                                    <option value="Aeropuerto">Aeropuerto</option>
+                                    <option value="Oficinas de car rental">Oficinas de car rental</option>
+                                    <option value="Otro punto (especifique en 'Consideraciones especiales')">Otro punto
+                                        (especifique en 'Consideraciones especiales')</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="rc_end_point_field">
+                                <label for="rc_end_point" class="fw-bold">Punto de finalización de renta:</label>
+                                <select class="form-select" name="rc_end_point" id="rc_end_point">
+                                    <option value="Aeropuerto">Aeropuerto</option>
+                                    <option value="Oficinas de car rental">Oficinas de car rental</option>
+                                    <option value="Otro punto (especifique en 'Consideraciones especiales')">Otro punto
+                                        (especifique en 'Consideraciones especiales')</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="rc_considerations_field">
+                                <label class="fw-bold" for="rc_considerations">Consideraciones y dirección exacta de punto de salida y punto de llegada:</label>
+                                <textarea class="form-control" name="rc_considerations" id="rc_considerations"
+                                    placeholder="e.g. Punto de inicio/Punto final"></textarea>
+                                <p class="form-text">*Por favor, especificar dirección exacta.</p>
+                            </div>
+                            <!-- RENTA DE AUTOS -->
+
+
+                            <!-- TRANSPORTES DEL SOL -->
+                                <div class="mb-3" id="route_field">
+                                    <label for="route_field" class="fw-bold">Seleccione la ruta:</label>
+                                    <select class="form-select" name="route" id="route">
+                                        <option value="Guatemala / Managua">Guatemala / Managua</option>
+                                        <option value="Guatemala / San José">Guatemala / San José</option>
+                                        <option value="Guatemala / San Salvador">Guatemala / San Salvador</option>
+                                        <option value="Managua / Guatemala">Managua / Guatemala</option>
+                                        <option value="Managua / San José">Managua / San José</option>
+                                        <option value="Managua / San Salvador">Managua / San Salvador</option>
+                                        <option value="San José / Guatemala">San José / Guatemala</option>
+                                        <option value="San José / Managua">San José / Managua</option>
+                                        <option value="San José / San Salvador">San José / San Salvador</option>
+                                        <option value="San Salvador / Guatemala">San Salvador / Guatemala</option>
+                                        <option value="San Salvador / Managua">San Salvador / Managua</option>
+                                        <option value="San Salvador / San José">San Salvador / San José</option>
+                                        </select>
+                                </div>
+                                <div class="mb-3" id="travel_type_field">
+                                    <label for="travel_type" class="fw-bold"> Tipo de viaje:</label>
+                                    <select name="travel_type" id="travel_type" class="form-select">
+                                        <option value="Ida y regreso">Ida y regreso</option>
+                                        <option value="Solo ida">Solo ida</option>
+                                        <option value="Regreso abierto">Regreso abierto</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" id="tds_start_date_field">
+                                    <label for="tds_start_date" class="fw-bold">Fecha de inicio de viaje:</label>
+                                    <input class="form-control" type="date" name="tds_start_date" id="tds_start_date">
+                                </div>
+                                <div class="mb-3" id="tds_end_date_field">
+                                    <label for="tds_end_date" class="fw-bold">Fecha de finalización de viaje:</label>
+                                    <input class="form-control" type="date" name="tds_end_date" id="tds_end_date">
+                                </div>
+                                <div class="mb-3" id="tds_adults_field">
+                                    <div class="fw-bold">Adultos que viajan:</div>
+                                    <input class="form-control" type="number" name="tds_adults" id="tds_adults"
+                                        value="1">
+                                </div>
+                                <div class="mb-3" id="tds_children_field">
+                                    <div class="fw-bold">Niños que viajan:</div>
+                                    <input class="form-control" type="number" name="tds_children" id="tds_children"
+                                        value="0">
+                                    <p class="form-text">*Menores de 12 años cumplidos</p>
+                                </div>
+                            <!-- TRANSPORTES DEL SOL -->
+
+
+
+                            <div class="text-center mt-4">
+                                <input class="btn btn-primary btn-md" type="submit" id="button"
+                                    value="Solicitar Cotización">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Establece la fecha mínima en el input de fecha
+            const today = new Date();
+            const dd = String(today.getDate()).padStart(2, '0');
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const yyyy = today.getFullYear();
+            const minDate = `${yyyy}-${mm}-${dd}`;
+            document.getElementById("travel_date").setAttribute("min", minDate);
+            document.getElementById("tourtravel_date").setAttribute("min", minDate);
+            document.getElementById("hotel_travel_date").setAttribute("min", minDate);
+            document.getElementById("transfer_date").setAttribute("min", minDate);
+            document.getElementById("rc_start_date").setAttribute("min", minDate);
+            document.getElementById("rc_end_date").setAttribute("min", minDate);
+            document.getElementById("tds_start_date").setAttribute("min", minDate);
+            document.getElementById("tds_end_date").setAttribute("min", minDate);
+
+            // Ocultar el formulario inicialmente
+            const form = document.getElementById("form");
+            form.style.display = "none";
+
+            // Mostrar el modal de transporte
+            document.getElementById("btnCotizarTransporte").addEventListener("click", function () {
+                const transportModal = new bootstrap.Modal(document.getElementById("transportModal"));
+                transportModal.show();
+            });
+
+            // Función para establecer valores predeterminados en campos select y number
+            function establecerValoresPredeterminados() {
+                const selectFields = document.querySelectorAll("#form select");
+                const numberFields = document.querySelectorAll("#form input[type='number']");
+
+                selectFields.forEach(select => {
+                    select.value = "no aplica";
+                });
+
+                numberFields.forEach(number => {
+                    number.value = 0;
+                });
+            }
+
+            // Función para mostrar campos específicos con "required" dinámico
+            function mostrarCampos(camposAmostrar) {
+                form.style.display = "block";
+                const allFields = document.querySelectorAll("#form .mb-3");
+
+                allFields.forEach(field => {
+                    field.style.display = "none";
+                    const input = field.querySelector("input, textarea, select");
+                    if (input) input.required = false; // Elimina el required de todos los campos
+                });
+
+                camposAmostrar.forEach(id => {
+                    const campo = document.getElementById(id);
+                    if (campo) {
+                        campo.style.display = "block";
+                        const input = campo.querySelector("input, textarea, select");
+                        if (input) input.required = true; // Añade el required solo a los campos visibles
+                    }
+                });
+
+                // Establece los valores predeterminados al mostrar los campos
+                establecerValoresPredeterminados();
+            }
+
+            // Función para "Cotizar Programa"
+            function mostrarCamposCotizarPrograma() {
+                const camposAmostrar = [
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "travelDateField",
+                    "packageField",  // Programa de interés
+                    "flexibilityField",
+                    "considerationsField",
+                    "adultsProgramField",
+                    "childrenProgramField"
+                ];
+                mostrarCampos(camposAmostrar);
+            }
+
+            // Función para "Cotizar Tour de un día"
+            function mostrarCamposCotizarTour() {
+                const camposAmostrar = [
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "tourField",
+                    "tourtravelDateField",
+                    "adultsTourField",
+                    "childrenTourField",
+                    "TourConsiderationsField",
+                ];
+                mostrarCampos(camposAmostrar);
+            }
+
+            // Función para "Cotizar Hotel"
+            function mostrarCamposCotizarHotel() {
+                const camposAmostrar = [
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "hotelField",
+                    "hotelTravelDateField",
+                    "hotelEndDateField",
+                    "adultsHotelField",
+                    "childrenHotelField",
+                    "roomTypeField",
+                    "hotelConsiderationsField"
+                ];
+                mostrarCampos(camposAmostrar);
+            }
+
+            // Mostrar campos para tipos de transporte específicos
+            document.getElementById("transfer").addEventListener("click", function () {
+                mostrarCampos([
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "transferField",
+                    "transferDateField",
+                    "vehicleField",
+                    "transferConsiderationsField"
+                ]);
+                bootstrap.Modal.getInstance(document.getElementById("transportModal")).hide();
+            });
+
+            //Mostrar campos para renta de auto
+            document.getElementById("rentacar").addEventListener("click", function () {
+                mostrarCampos([
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "rc_start_date_field", // Campos específicos del tipo de transporte 2
+                    "rc_end_date_field",
+                    "rc_car_type_field",
+                    "rc_start_point_field", // Campos específicos del tipo de transporte 2
+                    "rc_end_point_field",
+                    "rc_considerations_field",
+                ]);
+                bootstrap.Modal.getInstance(document.getElementById("transportModal")).hide();
+            });
+
+            document.getElementById("transportesdelsol").addEventListener("click", function () {
+                mostrarCampos([
+                    "nameField",
+                    "phoneField",
+                    "emailField",
+                    "route_field", // Campos específicos del tipo de transporte 3
+                    "travel_type_field",
+                    "tds_start_date_field",
+                    "tds_end_date_field",
+                    "tds_adults_field",
+                    "tds_children_field"
+                ]);
+                bootstrap.Modal.getInstance(document.getElementById("transportModal")).hide();
+            });
+
+            // Listener para "Cotizar Programa"
+            document.getElementById("btnCotizarPrograma").addEventListener("click", function () {
+                const formDisplay = form.style.display;
+                formDisplay === "none" ? mostrarCamposCotizarPrograma() : form.style.display = "none";
+            });
+
+            // Listener para "Cotizar Tour de un día"
+            document.getElementById("btnCotizarTour").addEventListener("click", function () {
+                const formDisplay = form.style.display;
+                formDisplay === "none" ? mostrarCamposCotizarTour() : form.style.display = "none";
+            });
+
+            // Listener para "Cotizar Hotel"
+            document.getElementById("btnCotizarHotel").addEventListener("click", function () {
+                const formDisplay = form.style.display;
+                formDisplay === "none" ? mostrarCamposCotizarHotel() : form.style.display = "none";
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('6796wf5wjcbDkXzy4')
+    </script>
+    <!-- Form -->
+    <!-- Form -->
+    <!-- Form -->
+
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <div class="fixed-help-center" title="Centro de ayuda">
+        <a href="./contact.html" class="nav-link">
+            <i class="bi bi-headset"></i>
+        </a>
+    </div>
+    <div class="fixed-whatsapp" title="Whatsapp">
+        <a href="https://wa.me/50368542459" class="nav-link">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!--Centro de ayuda-->
+    <!-- <form id="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="fw-bold" for="name" data-section="contact_form" data-value="name">Nombre:</label>
+                        <input class="form-control" type="text" name="client_name" id="client_name" required
+                            placeholder="e.g. Juan Pérez">
+                        <p class="form-text" data-section="contact_form" data-value="required">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="phone" data-section="contact_form" data-value="phone">Teléfono de
+                            contacto:</label>
+                        <input class="form-control" type="text" name="client_phone" id="client_phone"
+                            placeholder="e.g. 503 7123-4567" required>
+                        <p class="form-text" data-section="contact_form" data-value="required">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="email">email:</label>
+                        <input class="form-control" type="email" name="client_email" id="client_email" required
+                            placeholder="e.g. juanperez@mail.com">
+                        <p class="form-text" data-section="contact_form" data-value="required">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="travel_date" data-section="contact_form"
+                            data-value="date_of_trip">Fecha de viaje:</label>
+                        <input class="form-control" type="date" name="travel_date" id="travel_date">
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="package" data-section="contact_form" data-value="package">Paquete de
+                            interés:</label>
+                        <select class="form-select" name="package" id="package">
+                            <option value="Paquete 1">Paquete 1 </option>
+                            <option value="Paquete 2">Paquete 2 </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="fw-bold" for="tour" data-section="contact_form" data-value="tour">Tour de
+                            interés:</label>
+                        <select class="form-select" name="tour" id="tour">
+                            <option value="Tour 1"> Tour 1</option>
+                            <option value="Tour 2"> Tour 2</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="hotel" data-section="contact_form" data-value="hotel">Hotel de
+                            interés:</label>
+                        <select class="form-select" name="hotel" id="hotel">
+                            <option value="Hotel 1">Hotel 1 </option>
+                            <option value="Hotel 2">Hotel 2 </option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="transfer" data-section="contact_form" data-value="transfer">Traslado
+                            de interés:</label>
+                        <select class="form-select" name="transfer" id="transfer">
+                            <option value="Transfer 1"> Transfer 1</option>
+                            <option value="Transfer 2"> Transfer 2</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="flexibility" data-section="contact_form"
+                            data-value="flexibility">¿Tienes flexibilidad de fechas?:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexibility" id="flexibility" value="SI">
+                            <label class="form-label" data-section="contact_form" data-value="yes">SI</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexibility" id="flexibility" value="NO"
+                                checked>
+                            <label class="form-label">NO</label>
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="considerations" data-section="contact_form"
+                            data-value="considerations">Consideraciones especiales:</label>
+                        <textarea class="form-control" name="considerations" id="considerations"
+                            placeholder="e.g. Comida vegana/Vegan food"></textarea>
+                    </div>
+                    <input class="btn btn-primary btn-lg" type="submit" id="button" value="Solicitar Cotización">
+                </div>
+            </div>
+
+        </form> -->
+</body>
+
+
+<footer class="text-center text-white footer-background">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            <!-- Twitter - X -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="bi bi-twitter-x"></i>
+            </a>
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © <span id="currentYear"></span>
+        <a class="text-dark" href="#">reserve503.travel</a>
+    </div>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Copyright -->
+</footer>
+
+<!-- End of .container -->
+
+<script src="../assets/js/script2.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</html>

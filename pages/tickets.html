@@ -23,11 +23,11 @@
     <!--Referencia para FontAwesome-->
     <script src="https://kit.fontawesome.com/66c19c8ea2.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Referencias para mask-input -->
+    <!-- Referencias para mask-input -->
     <!-- Incluir jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Incluir Inputmask -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <title>reserve503.travel</title>
 
 </head>
@@ -45,47 +45,73 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col align-self-end flex-row-reverse" id="navbarNav">
-                <ul class="navbar-nav text-center nav-text ">
-                    <!-- Flags -->
-                    <!-- Flags -->
-                    <!-- Flags -->
-                    <div id="flags" class="flags nav-item align-self-center">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center nav-text d-flex align-items-center gap-3">
+                    <!-- Flags Section -->
+                    <div id="google_translate_element" class="d-flex justify-content-end p-2 bg-light border rounded">
+                    </div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'es',
+                                includedLanguages: 'es,en,fr,ja,zh-CN,pt,hi,it,de,sv,ru,zh-TW,vi,ar,he',
+                                layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+                                gaTrack: true,
+                                gaId: 'UA-12345678-XX'
+                            }, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript"
+                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <!-- <div id="flags" class="flags nav-item align-self-center d-flex gap-2">
                         <div class="flags__item" data-language="es">
-                            <img src="../assets/icons/sv.svg" alt="">
-                            <p class="fw-lighter">es</p>
+                            <img src="../assets/icons/sv.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">es</p>
                         </div>
                         <div class="flags__item" data-language="en">
-                            <img src="../assets/icons/us.svg" alt="">
-                            <p class="fw-lighter">en</p>
+                            <img src="../assets/icons/us.svg" alt="" style="width: 25px;">
+                            <p class="fw-lighter m-0">en</p>
                         </div>
-                    </div>
-                    <!-- Flags -->
-                    <!-- Flags -->
-                    <!-- Flags -->
+                    </div> -->
+                    <!-- Nav Items -->
                     <li class="nav-item">
                         <a class="nav-link nav-hover" href="../index.html" data-section="menu"
                             data-value="home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-hover" href="#" data-section="menu" data-value="services">Servicios
-                            turísticos</a>
+                        <a class="nav-link nav-hover" href="./el-salvador.html" data-section="menu"
+                            data-value="elsalvador">El Salvador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-hover active" href="./tickets.html" data-section="menu"
-                            data-value="tickets">Boletos aéreos</a>
+                        <a class="nav-link nav-hover" href="./services.html" data-section="menu"
+                            data-value="other">Turismo Internacional</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link nav-hover " aria-current="page" href="./quienes-somos.html"
-                            data-section="menu" data-value="who">¿Quiénes somos?</a>
+                    <!-- Dropdown Menu for Cotizar -->
+                    <li class="nav-item dropdown zoom-effect">
+                        <a class="nav-link dropdown-toggle nav-hover active" href="#" id="cotizarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cotizar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cotizarDropdown">
+                            <li><a class="dropdown-item active" href="#" data-section="menu"
+                                    data-value="tickets">Boletos aéreos</a></li>
+                            <li><a class="dropdown-item" href="./quote.html" data-section="menu"
+                                    data-value="quote">Cotizar Servicios</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link nav-hover" href="./contact.html" data-section="menu" data-value="contact">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./quienes-somos.html" data-section="menu"
+                            data-value="who">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="./contact.html" data-section="menu"
+                            data-value="contact">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Barra de navegacion-->
     <!-- Barra de navegacion-->
     <!-- Barra de navegacion-->
@@ -96,53 +122,95 @@
     <!--Formulario  -->
     <!--Formulario  -->
     <div class="container mt-4 border border-success p-3 rounded " id="tickets_form">
-        <h1 class="green-text text-center" data-section="tickets_form" data-value="title">Cotiza tu próximo Boleto</h1>
+        <h1 class="green-text text-center" data-section="tickets_form" data-value="title">Cotiza tu próximo vuelo</h1>
         <br>
+        <p data-section="tickets_form" data-value="instructions" style="text-align: justify;">Por favor, complete el
+            formulario proporcionando información precisa y actualizada para poder ofrecerle la cotización más adecuada
+            para su boleto aéreo. Garantizamos la total confidencialidad de sus datos, los cuales serán utilizados
+            exclusivamente para procesar su solicitud y mejorar la calidad de nuestro servicio. ¡Gracias por confiar en
+            nosotros!</p>
         <form id="form">
             <div class="row">
                 <!-- Columna 1 -->
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="name" class="fw-bold" data-section="tickets_form" data-value="name">Nombre:</label>
-                        <input type="text" class="form-control" id="name" name="name" required placeholder="e.g. Juan Pérez">
+                        <input type="text" class="form-control" id="name" name="name" required
+                            placeholder="e.g. Juan Pérez">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="fw-bold" data-section="tickets_form" data-value="phone">Teléfono de contacto:</label>
-                        <input type="text" class="form-control" id="phone" name="phone" required placeholder="e.g. 503 7123-4567">
+                        <label for="phone" class="fw-bold" data-section="tickets_form" data-value="phone">Teléfono de
+                            contacto:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required
+                            placeholder="e.g. 503 7123-4567">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="fw-bold" data-section="tickets_form" data-value="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" required placeholder="e.g. juanperez@mail.com">
+                        <input type="email" class="form-control" id="email" name="email" required
+                            placeholder="e.g. juanperez@mail.com">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="city" class="fw-bold" data-section="tickets_form" data-value="city">Ciudad de destino:</label>
-                        <input type="text" class="form-control" id="city" name="city" required placeholder="e.g. Los Angeles">
+                        <label for="city" class="fw-bold" data-section="tickets_form" data-value="city">Ciudad de
+                            origen:</label>
+                        <input type="text" class="form-control" id="origin" name="origin" required
+                            placeholder="e.g. San Salvador">
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="start_date" class="fw-bold" data-section="tickets_form" data-value="start_date">Fecha de inicio del viaje:</label>
+                        <label for="city" class="fw-bold" data-section="tickets_form" data-value="city">Ciudad de
+                            destino:</label>
+                        <input type="text" class="form-control" id="city" name="city" required
+                            placeholder="e.g. Los Angeles">
+                        <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="start_date" class="fw-bold" data-section="tickets_form"
+                            data-value="start_date">Fecha de inicio del viaje:</label>
                         <input type="date" class="form-control" id="start_date" name="start_date" required>
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label for="end_date" class="fw-bold" data-section="tickets_form" data-value="end_date">Fecha de retorno:</label>
+                        <label for="end_date" class="fw-bold" data-section="tickets_form" data-value="end_date">Fecha de
+                            retorno:</label>
                         <input type="date" class="form-control" id="end_date" name="end_date" required>
                         <p class="form-text" data-section="tickets_form" data-value="required">*Campo requerido</p>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" data-section="tickets_form" data-value="flexibility">¿Tienes flexibilidad de fechas?:</label>
+                        <label class="fw-bold" data-section="tickets_form" data-value="flexibility">¿Tienes flexibilidad
+                            de fechas?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexibility" id="flexibility_si"
                                 value="SI" checked>
-                            <label class="form-check-label" for="flexibility_si" data-section="tickets_form" data-value="yes">SI</label>
+                            <label class="form-check-label" for="flexibility_si" data-section="tickets_form"
+                                data-value="yes">SI</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexibility" id="flexibility_no"
                                 value="NO">
                             <label class="form-check-label" for="flexibility_no">NO</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="contact_form" data-section="tickets_form"
+                            data-value="contact_form">¿Cuál es tu forma preferida para que te contactemos?:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
+                                value="WHATSAPP" checked>
+                            <label class="form-check-label" for="WHATSAPP">WhatsApp</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
+                                value="email">
+                            <label class="form-check-label" for="email">email</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
+                                value="LLAMADA">
+                            <label class="form-check-label" for="LLAMADA" data-section="tickets_form"
+                                data-value="phone_call">Llamada telefónica</label>
                         </div>
                     </div>
 
@@ -151,7 +219,8 @@
                 <div class="col-md-6">
 
                     <div class="mb-3">
-                        <label class="fw-bold" for="airline" data-section="tickets_form" data-value="airline">Selecciona tu aerolínea de preferencia:</label>
+                        <label class="fw-bold" for="airline" data-section="tickets_form" data-value="airline">Selecciona
+                            tu aerolínea de preferencia:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="airline" id="airline" value="AVIANCA"
                                 checked>
@@ -186,7 +255,8 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="baggage" data-section="tickets_form" data-value="baggage">¿Deseas incluir el equipaje de carga?:</label>
+                        <label class="fw-bold" for="baggage" data-section="tickets_form" data-value="baggage">¿Deseas
+                            incluir el equipaje de carga?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="baggage" id="baggage" value="SI" checked>
                             <label for="SI" data-section="tickets_form" data-value="yes">SI</label>
@@ -197,10 +267,12 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">¿Deseas viajar con escalas?:</label>
+                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">¿Deseas viajar
+                            con escalas?:</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="scale" id="scale" value="SI">
-                            <label class="form-check-label" for="SI" data-section="tickets_form" data-value="yes">SI</label>
+                            <label class="form-check-label" for="SI" data-section="tickets_form"
+                                data-value="yes">SI</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="scale" id="scale" value="NO" checked>
@@ -208,42 +280,57 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="contact_form" data-section="tickets_form" data-value="contact_form">¿Cuál es tu forma preferida para que te contactemos?:</label>
+                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">¿Clase de preferencia?:</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
-                                value="WHATSAPP" checked>
-                            <label class="form-check-label" for="WHATSAPP">WhatsApp</label>
+                            <input class="form-check-input" type="radio" name="class" id="class" value="Primera Clase">
+                            <label class="form-check-label" for="SI" data-section="tickets_form"
+                                data-value="yes">Primera Clase</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
-                                value="email">
-                            <label class="form-check-label" for="email">email</label>
+                            <input class="form-check-input" type="radio" name="class" id="class" value="Clase Ejecutiva" >
+                            <label class="form-check-label" for="NO">Clase Ejecutiva</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="contact_form" id="contact_form"
-                                value="LLAMADA">
-                            <label class="form-check-label" for="LLAMADA" data-section="tickets_form" data-value="phone_call">Llamada telefónica</label>
+                            <input class="form-check-input" type="radio" name="class" id="class" value="Clase Turista" checked>
+                            <label class="form-check-label" for="NO">Clase Turista</label>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="adults" data-section="tickets_form" data-value="adults">¿Cuántos adultos viajan?:</label>
+                        <label class="fw-bold" for="scale" data-section="tickets_form" data-value="scale">Tipo de asiento de preferencia:</label>
+                        <p class="form-text">*Los asientos serán asignados solo si el tipo de tarifa lo permite</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="seat" id="seat" value="Asiento de pasillo" checked>
+                            <label class="form-check-label" for="SI" data-section="tickets_form"
+                                data-value="yes">Asiento de pasillo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="seat" id="seat" value="Asiento de ventana">
+                            <label class="form-check-label" for="NO">Asiento de ventana</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="fw-bold" for="adults" data-section="tickets_form" data-value="adults">¿Cuántos
+                            adultos viajan?:</label>
                         <input class="form-control" type="number" name="adults" id="adults" min="1" max="10" value="1">
                     </div>
                     <div class="mb-3">
-                        <label class="fw-bold" for="kids" data-section="tickets_form" data-value="kids">¿Cuántos niños viajan?:</label>
+                        <label class="fw-bold" for="kids" data-section="tickets_form" data-value="kids">¿Cuántos niños
+                            viajan?:</label>
                         <input class="form-control" type="number" name="kids" id="kids" min="0" max="10" value="0">
                     </div>
-                    <input class="btn btn-primary btn-lg" type="submit" id="button" value="Solicitar cotizacion">
+                    <input class="btn btn-primary btn-lg" type="submit" id="ticketsubmit" value="Solicitar cotizacion">
                 </div>
             </div>
         </form>
+
     </div>
 
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script type="text/javascript">
-        emailjs.init('o64LpbgtkCnpyJdSD')
+        emailjs.init('6796wf5wjcbDkXzy4')
     </script>
     <!--Formulario  -->
     <!--Formulario  -->
@@ -255,14 +342,13 @@
     <!--Centro de ayuda-->
     <!--Centro de ayuda-->
     <!--Centro de ayuda-->
-
     <div class="fixed-help-center" title="Centro de ayuda">
-        <a href="" class="nav-link">
+        <a href="./contact.html" class="nav-link">
             <i class="bi bi-headset"></i>
         </a>
     </div>
     <div class="fixed-whatsapp" title="Whatsapp">
-        <a href="" class="nav-link">
+        <a href="https://wa.me/50368542459" class="nav-link">
             <i class="bi bi-whatsapp"></i>
         </a>
     </div>
@@ -272,7 +358,7 @@
 </body>
 
 
-<footer class="text-center text-white footer-background ">
+<footer class="text-center text-white footer-background">
     <!-- Grid container -->
     <div class="container pt-4">
         <!-- Section: Social media -->
@@ -300,13 +386,18 @@
 
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023
-        <a class="text-dark" href="https://mdbootstrap.com/">reserve503.travel</a>
+        © <span id="currentYear"></span>
+        <a class="text-dark" href="#">reserve503.travel</a>
     </div>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
     <!-- Copyright -->
 </footer>
-<!-- End of container -->
 
+<!-- End of .container -->
 
 
 <script src="../assets/js/script.js"></script>

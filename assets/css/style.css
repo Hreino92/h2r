@@ -364,7 +364,14 @@ iframe{
   background-repeat: no-repeat;
   height: 300px;
   border-radius: 5px;
+}#caprogram6{
+  background-image: url('../img/caprograms/regional.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 5px;
 }
+
 #naprogram1{
   background-image: url('../img/naprograms/naprogram1.png');
   background-size: cover;

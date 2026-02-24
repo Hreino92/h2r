@@ -338,9 +338,9 @@
                                             pájaro y la flor</option>
                                     </select>
                                 </div>
-                                <div class="mb-3" id="tourtravelDateField">
+                                <div class="mb-3" id="tour_travelDateField">
                                     <label class="fw-bold" for="travel_date">Fecha del tour:</label>
-                                    <input class="form-control" type="date" name="tourtravel_date" id="tourtravel_date">
+                                    <input class="form-control" type="date" name="tour_travel_date" id="tour_travel_date">
                                 </div>
                                 <div class="mb-3" id="adultsTourField">
                                     <div class="fw-bold">Adultos participando en tour:</div>
@@ -594,7 +594,7 @@
             const yyyy = today.getFullYear();
             const minDate = `${yyyy}-${mm}-${dd}`;
             document.getElementById("travel_date").setAttribute("min", minDate);
-            document.getElementById("tourtravel_date").setAttribute("min", minDate);
+            document.getElementById("tour_travel_date").setAttribute("min", minDate);
             document.getElementById("hotel_travel_date").setAttribute("min", minDate);
             document.getElementById("transfer_date").setAttribute("min", minDate);
             document.getElementById("rc_start_date").setAttribute("min", minDate);
@@ -673,7 +673,7 @@
                     "phoneField",
                     "emailField",
                     "tourField",
-                    "tourtravelDateField",
+                    "tour_travelDateField",
                     "adultsTourField",
                     "childrenTourField",
                     "TourConsiderationsField",
